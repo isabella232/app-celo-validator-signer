@@ -28,7 +28,10 @@ SIGNER_LIB_INCLUDES := bls-embedded/include
 # Main app configuration
 
 APPNAME = "Celo Validator"
-APPVERSION = 1.0.0
+APPVERSION_M=1
+APPVERSION_N=0
+APPVERSION_P=0
+APPVERSION=$(APPVERSION_M).$(APPVERSION_N).$(APPVERSION_P)
 APP_LOAD_PARAMS = --appFlags 0x200 $(COMMON_LOAD_PARAMS)
 # Add pending review tag
 APP_LOAD_PARAMS += --tlvraw 9F:01
